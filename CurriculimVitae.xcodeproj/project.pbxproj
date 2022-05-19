@@ -108,7 +108,6 @@
 				C79B613B2835FB95005874D4 /* Sources */,
 				C79B613C2835FB95005874D4 /* Frameworks */,
 				C79B613D2835FB95005874D4 /* Resources */,
-				D3D3A760F66EB014C6597556 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -167,23 +166,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		D3D3A760F66EB014C6597556 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CurriculimVitae/Pods-CurriculimVitae-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CurriculimVitae/Pods-CurriculimVitae-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CurriculimVitae/Pods-CurriculimVitae-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		FA7F199E8F3CC49F4FAAFC71 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
