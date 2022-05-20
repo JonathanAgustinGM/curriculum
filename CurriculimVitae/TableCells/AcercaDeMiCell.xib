@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="acercademicell" rowHeight="596" id="KGk-i7-Jjw" customClass="AcercaDeMiCell" customModule="CurriculimVitae" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="596"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="596"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ni-6t-Geo">
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="599"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CGI-iN-tAr">
+                                <rect key="frame" x="76" y="50" width="222" height="195"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="CGI-iN-tAr" secondAttribute="height" multiplier="74:65" id="8fV-Wp-ryb"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bC3-XW-RMW">
+                                <rect key="frame" x="76" y="255" width="222" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMb-JU-uCF">
+                                <rect key="frame" x="20" y="295.5" width="334" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92654908439999994" green="0.71010929710000004" blue="0.65415794630000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="374" id="A1X-Vr-RjV"/>
+                            <constraint firstAttribute="trailing" secondItem="CGI-iN-tAr" secondAttribute="trailing" constant="76" id="GDz-Cy-bCM"/>
+                            <constraint firstItem="bC3-XW-RMW" firstAttribute="top" secondItem="CGI-iN-tAr" secondAttribute="bottom" constant="10" id="SnD-Ia-pgo"/>
+                            <constraint firstAttribute="trailing" secondItem="bC3-XW-RMW" secondAttribute="trailing" constant="76" id="Tel-01-ADU"/>
+                            <constraint firstItem="VMb-JU-uCF" firstAttribute="leading" secondItem="4ni-6t-Geo" secondAttribute="leading" constant="20" id="Txf-Oz-mfz"/>
+                            <constraint firstAttribute="trailing" secondItem="VMb-JU-uCF" secondAttribute="trailing" constant="20" id="U5i-yB-rzk"/>
+                            <constraint firstItem="bC3-XW-RMW" firstAttribute="leading" secondItem="4ni-6t-Geo" secondAttribute="leading" constant="76" id="VWP-SI-Ffa"/>
+                            <constraint firstAttribute="height" constant="599" id="cca-KR-BLX"/>
+                            <constraint firstItem="VMb-JU-uCF" firstAttribute="top" secondItem="bC3-XW-RMW" secondAttribute="bottom" constant="20" id="doo-av-JMi"/>
+                            <constraint firstItem="CGI-iN-tAr" firstAttribute="leading" secondItem="4ni-6t-Geo" secondAttribute="leading" constant="76" id="eFe-ZS-QNw"/>
+                            <constraint firstItem="CGI-iN-tAr" firstAttribute="top" secondItem="4ni-6t-Geo" secondAttribute="top" constant="50" id="wNY-6a-YLy"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="4ni-6t-Geo" secondAttribute="trailing" id="5nu-sd-uNx"/>
+                    <constraint firstItem="4ni-6t-Geo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="6Uy-ja-Igg"/>
+                    <constraint firstAttribute="bottom" secondItem="4ni-6t-Geo" secondAttribute="bottom" id="BmD-29-o5g"/>
+                    <constraint firstItem="4ni-6t-Geo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="F6B-3R-dcQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="Edad" destination="bC3-XW-RMW" id="LAV-YN-06e"/>
+                <outlet property="Foto" destination="CGI-iN-tAr" id="6yv-W6-g3H"/>
+                <outlet property="SobreMi" destination="VMb-JU-uCF" id="HHd-gv-xUe"/>
+            </connections>
+            <point key="canvasLocation" x="177.536231884058" y="249.77678571428569"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C744245F283750E500482CFF /* AcercaDeMiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C744245D283750E500482CFF /* AcercaDeMiCell.swift */; };
+		C7442460283750E500482CFF /* AcercaDeMiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C744245E283750E500482CFF /* AcercaDeMiCell.xib */; };
+		C7442463283760D600482CFF /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C7442462283760D600482CFF /* Kingfisher */; };
 		C77937BA28372D4000DCAFE4 /* RequestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77937B928372D4000DCAFE4 /* RequestData.swift */; };
 		C79B61432835FB95005874D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79B61422835FB95005874D4 /* AppDelegate.swift */; };
 		C79B61452835FB95005874D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79B61442835FB95005874D4 /* SceneDelegate.swift */; };
@@ -21,6 +24,8 @@
 /* Begin PBXFileReference section */
 		7B600E952DC1A6D99D177C1B /* Pods-CurriculimVitae.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurriculimVitae.release.xcconfig"; path = "Target Support Files/Pods-CurriculimVitae/Pods-CurriculimVitae.release.xcconfig"; sourceTree = "<group>"; };
 		AE15BA119B556E2256DB1658 /* Pods-CurriculimVitae.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurriculimVitae.debug.xcconfig"; path = "Target Support Files/Pods-CurriculimVitae/Pods-CurriculimVitae.debug.xcconfig"; sourceTree = "<group>"; };
+		C744245D283750E500482CFF /* AcercaDeMiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcercaDeMiCell.swift; sourceTree = "<group>"; };
+		C744245E283750E500482CFF /* AcercaDeMiCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AcercaDeMiCell.xib; sourceTree = "<group>"; };
 		C77937B928372D4000DCAFE4 /* RequestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestData.swift; sourceTree = "<group>"; };
 		C79B613F2835FB95005874D4 /* CurriculimVitae.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurriculimVitae.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C79B61422835FB95005874D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7442463283760D600482CFF /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +58,15 @@
 				7B600E952DC1A6D99D177C1B /* Pods-CurriculimVitae.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C744245C283750A700482CFF /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				C744245D283750E500482CFF /* AcercaDeMiCell.swift */,
+				C744245E283750E500482CFF /* AcercaDeMiCell.xib */,
+			);
+			path = TableCells;
 			sourceTree = "<group>";
 		};
 		C79B61362835FB95005874D4 = {
@@ -79,6 +94,7 @@
 				C79B615828360EA0005874D4 /* Structs.swift */,
 				C79B61442835FB95005874D4 /* SceneDelegate.swift */,
 				C79B61462835FB95005874D4 /* ViewController.swift */,
+				C744245C283750A700482CFF /* TableCells */,
 				C79B61482835FB95005874D4 /* Main.storyboard */,
 				C79B614B2835FB97005874D4 /* Assets.xcassets */,
 				C79B614D2835FB97005874D4 /* LaunchScreen.storyboard */,
@@ -105,6 +121,9 @@
 			dependencies = (
 			);
 			name = CurriculimVitae;
+			packageProductDependencies = (
+				C7442462283760D600482CFF /* Kingfisher */,
+			);
 			productName = CurriculimVitae;
 			productReference = C79B613F2835FB95005874D4 /* CurriculimVitae.app */;
 			productType = "com.apple.product-type.application";
@@ -133,6 +152,9 @@
 				Base,
 			);
 			mainGroup = C79B61362835FB95005874D4;
+			packageReferences = (
+				C7442461283760D600482CFF /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = C79B61402835FB95005874D4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -149,6 +171,7 @@
 			files = (
 				C79B614F2835FB97005874D4 /* LaunchScreen.storyboard in Resources */,
 				C79B61572835FD8B005874D4 /* GoogleService-Info.plist in Resources */,
+				C7442460283750E500482CFF /* AcercaDeMiCell.xib in Resources */,
 				C79B614C2835FB97005874D4 /* Assets.xcassets in Resources */,
 				C79B614A2835FB95005874D4 /* Main.storyboard in Resources */,
 			);
@@ -191,6 +214,7 @@
 				C79B61472835FB95005874D4 /* ViewController.swift in Sources */,
 				C79B61432835FB95005874D4 /* AppDelegate.swift in Sources */,
 				C79B61452835FB95005874D4 /* SceneDelegate.swift in Sources */,
+				C744245F283750E500482CFF /* AcercaDeMiCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +434,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C7442461283760D600482CFF /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C7442462283760D600482CFF /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C7442461283760D600482CFF /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C79B61372835FB95005874D4 /* Project object */;
 }

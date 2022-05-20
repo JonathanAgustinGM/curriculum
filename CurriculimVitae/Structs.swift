@@ -7,16 +7,17 @@
 
 import Foundation
  
-struct Jonathan: Decodable {
+struct Programador: Decodable {
     var Developer: Developer?
 }
 struct Developer: Decodable {
     var Nombre: String?
-    var Edad: Int?
+    var Edad: String?
     var AcercaDeMi: String?
     var Conocimientos: Conocimientos?
     var Escolaridad: Escolaridad?
     var ExperienciaLaboral: ExperienciaLaboral?
+    var Foto: String?
 }
 struct Conocimientos: Decodable {
     var LenguajesProgramacion: LenguajesProgramacion?
