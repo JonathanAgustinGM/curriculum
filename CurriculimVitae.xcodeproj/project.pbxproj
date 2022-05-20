@@ -10,6 +10,9 @@
 		C744245F283750E500482CFF /* AcercaDeMiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C744245D283750E500482CFF /* AcercaDeMiCell.swift */; };
 		C7442460283750E500482CFF /* AcercaDeMiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C744245E283750E500482CFF /* AcercaDeMiCell.xib */; };
 		C7442463283760D600482CFF /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C7442462283760D600482CFF /* Kingfisher */; };
+		C7442465283764E100482CFF /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7442464283764E100482CFF /* ViewExtension.swift */; };
+		C74424682837678200482CFF /* ConocimientosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74424662837678200482CFF /* ConocimientosCell.swift */; };
+		C74424692837678200482CFF /* ConocimientosCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C74424672837678200482CFF /* ConocimientosCell.xib */; };
 		C77937BA28372D4000DCAFE4 /* RequestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77937B928372D4000DCAFE4 /* RequestData.swift */; };
 		C79B61432835FB95005874D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79B61422835FB95005874D4 /* AppDelegate.swift */; };
 		C79B61452835FB95005874D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79B61442835FB95005874D4 /* SceneDelegate.swift */; };
@@ -26,6 +29,9 @@
 		AE15BA119B556E2256DB1658 /* Pods-CurriculimVitae.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurriculimVitae.debug.xcconfig"; path = "Target Support Files/Pods-CurriculimVitae/Pods-CurriculimVitae.debug.xcconfig"; sourceTree = "<group>"; };
 		C744245D283750E500482CFF /* AcercaDeMiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcercaDeMiCell.swift; sourceTree = "<group>"; };
 		C744245E283750E500482CFF /* AcercaDeMiCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AcercaDeMiCell.xib; sourceTree = "<group>"; };
+		C7442464283764E100482CFF /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		C74424662837678200482CFF /* ConocimientosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConocimientosCell.swift; sourceTree = "<group>"; };
+		C74424672837678200482CFF /* ConocimientosCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConocimientosCell.xib; sourceTree = "<group>"; };
 		C77937B928372D4000DCAFE4 /* RequestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestData.swift; sourceTree = "<group>"; };
 		C79B613F2835FB95005874D4 /* CurriculimVitae.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurriculimVitae.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C79B61422835FB95005874D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +71,8 @@
 			children = (
 				C744245D283750E500482CFF /* AcercaDeMiCell.swift */,
 				C744245E283750E500482CFF /* AcercaDeMiCell.xib */,
+				C74424662837678200482CFF /* ConocimientosCell.swift */,
+				C74424672837678200482CFF /* ConocimientosCell.xib */,
 			);
 			path = TableCells;
 			sourceTree = "<group>";
@@ -94,6 +102,7 @@
 				C79B615828360EA0005874D4 /* Structs.swift */,
 				C79B61442835FB95005874D4 /* SceneDelegate.swift */,
 				C79B61462835FB95005874D4 /* ViewController.swift */,
+				C7442464283764E100482CFF /* ViewExtension.swift */,
 				C744245C283750A700482CFF /* TableCells */,
 				C79B61482835FB95005874D4 /* Main.storyboard */,
 				C79B614B2835FB97005874D4 /* Assets.xcassets */,
@@ -171,6 +180,7 @@
 			files = (
 				C79B614F2835FB97005874D4 /* LaunchScreen.storyboard in Resources */,
 				C79B61572835FD8B005874D4 /* GoogleService-Info.plist in Resources */,
+				C74424692837678200482CFF /* ConocimientosCell.xib in Resources */,
 				C7442460283750E500482CFF /* AcercaDeMiCell.xib in Resources */,
 				C79B614C2835FB97005874D4 /* Assets.xcassets in Resources */,
 				C79B614A2835FB95005874D4 /* Main.storyboard in Resources */,
@@ -212,6 +222,8 @@
 				C79B615928360EA0005874D4 /* Structs.swift in Sources */,
 				C77937BA28372D4000DCAFE4 /* RequestData.swift in Sources */,
 				C79B61472835FB95005874D4 /* ViewController.swift in Sources */,
+				C7442465283764E100482CFF /* ViewExtension.swift in Sources */,
+				C74424682837678200482CFF /* ConocimientosCell.swift in Sources */,
 				C79B61432835FB95005874D4 /* AppDelegate.swift in Sources */,
 				C79B61452835FB95005874D4 /* SceneDelegate.swift in Sources */,
 				C744245F283750E500482CFF /* AcercaDeMiCell.swift in Sources */,

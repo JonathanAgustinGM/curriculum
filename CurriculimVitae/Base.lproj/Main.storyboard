@@ -28,6 +28,9 @@
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" red="0.92654908439999994" green="0.71010929710000004" blue="0.65415794630000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="DatosAcercademi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q7D-9g-8vX"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78f-MJ-vzy">
                                         <rect key="frame" x="0.0" y="60.5" width="195" height="57.5"/>
@@ -37,6 +40,9 @@
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" red="0.92654908439999994" green="0.71010929710000004" blue="0.65415794630000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="DatosConocimientos:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V7J-oq-WSl"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sc-Zk-7hw">
                                         <rect key="frame" x="0.0" y="121" width="195" height="58"/>

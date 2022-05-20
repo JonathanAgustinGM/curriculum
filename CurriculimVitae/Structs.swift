@@ -25,6 +25,10 @@ struct Conocimientos: Decodable {
 }
 struct LenguajesProgramacion: Decodable{
     var iOS: String?
+    var xCode1: String?
+    var xCode2: String?
+    var xCode3: String?
+    var xCode4: String?
     
 }
 struct Escolaridad: Decodable {
