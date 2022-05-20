@@ -101,12 +101,18 @@
                                                 <color key="tintColor" red="0.92654908439999994" green="0.55666067760000004" blue="0.46525859650000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="person.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="acercademibtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hfq-P9-rbI"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmM-MX-gwE">
                                                 <rect key="frame" x="73" y="0.0" width="62.5" height="50"/>
                                                 <color key="tintColor" red="0.92654908439999994" green="0.55666067760000004" blue="0.46525859650000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="book.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="conocimientosbtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YYv-JC-02Q"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUQ-gQ-u0M">
                                                 <rect key="frame" x="145.5" y="0.0" width="63" height="50"/>

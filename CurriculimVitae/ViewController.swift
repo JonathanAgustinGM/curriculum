@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func menubtn(_ sender: Any) {
-        abrirCerrarMenu()
+        abrirCerrarMenu(animated: true)
 
        
     }
@@ -44,16 +44,14 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func DatosAcercademi(_ sender: Any) {
-    tipodedatos = "acercademi"
-        self.DatosProgramadorTable.reloadData()
-        self.abrirCerrarMenu()
+   acercademibtn(self)
+        self.abrirCerrarMenu(animated: true)
     }
     @IBAction func DatosConocimientos(_ sender: Any) {
-        tipodedatos = "conocimientos"
-        self.DatosProgramadorTable.reloadData()
-        self.abrirCerrarMenu()
+        conocimientosbtn(self)
+        self.abrirCerrarMenu(animated: true)
     }
-    func abrirCerrarMenu() {
+    func abrirCerrarMenu(animated: Bool) {
         if DerechaConstraint.constant == 0 {
             DerechaConstraint.constant = 240
             IzquierdaConstraint.constant = -240
@@ -63,6 +61,16 @@ class ViewController: UIViewController {
             IzquierdaConstraint.constant = 0
             MenuBtn.title = "Menú"
         }
+    }
+    @IBAction func acercademibtn(_ sender: Any) {
+        tipodedatos = "acercademi"
+        self.title = "Acerca de Mi"
+        self.DatosProgramadorTable.reloadData()
+    }
+    @IBAction func conocimientosbtn(_ sender: Any) {
+        tipodedatos = "conocimientos"
+        self.title = "Conocimientos"
+        self.DatosProgramadorTable.reloadData()
     }
 }
 
