@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         recibirdatos()
 
         DatosProgramadorTable.dataSource = self
-        
+
         DatosProgramadorTable.register(UINib(nibName: "AcercaDeMiCell",
                                              bundle: nil),
                                        forCellReuseIdentifier: "acercademicell")
@@ -33,8 +33,8 @@ class ViewController: UIViewController {
                                              bundle: nil),
                                        forCellReuseIdentifier: "experiencialaboralcell")
         DatosProgramadorTable.register(UINib(nibName: "EscolaridadCell",
-                                            bundle: nil),
-                                      forCellReuseIdentifier: "escolaridadcell")
+                                             bundle: nil),
+                                       forCellReuseIdentifier: "escolaridadcell")
         DatosProgramadorTable.register(UINib(nibName: "OtrosCell",
                                              bundle: nil),
                                        forCellReuseIdentifier: "otroscell")
@@ -58,15 +58,17 @@ class ViewController: UIViewController {
         experiencialaboralbtn(self)
         abrirCerrarMenu(animated: true)
     }
+
     @IBAction func DatosEscolaridad(_ sender: Any) {
         escolaridadbtn(self)
         abrirCerrarMenu(animated: true)
     }
+
     @IBAction func DatosOtros(_ sender: Any) {
         otrosbtn(self)
         abrirCerrarMenu(animated: true)
     }
-    
+
     func abrirCerrarMenu(animated: Bool) {
         if DerechaConstraint.constant == 0 {
             DerechaConstraint.constant = 240
@@ -102,11 +104,13 @@ class ViewController: UIViewController {
         title = "Escolaridad"
         DatosProgramadorTable.reloadData()
     }
+
     @IBAction func otrosbtn(_ sender: Any) {
         tipodedatos = "otros"
         title = "Otros"
         DatosProgramadorTable.reloadData()
     }
+
     func recibirdatos() {
         ExternalData.shared.GetDeveloperData { dev in
             self.programadorDatos = dev
