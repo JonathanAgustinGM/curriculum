@@ -35,6 +35,9 @@ class ViewController: UIViewController {
         DatosProgramadorTable.register(UINib(nibName: "EscolaridadCell",
                                             bundle: nil),
                                       forCellReuseIdentifier: "escolaridadcell")
+        DatosProgramadorTable.register(UINib(nibName: "OtrosCell",
+                                             bundle: nil),
+                                       forCellReuseIdentifier: "otroscell")
     }
 
     @IBAction func menubtn(_ sender: Any) {
@@ -57,6 +60,10 @@ class ViewController: UIViewController {
     }
     @IBAction func DatosEscolaridad(_ sender: Any) {
         escolaridadbtn(self)
+        abrirCerrarMenu(animated: true)
+    }
+    @IBAction func DatosOtros(_ sender: Any) {
+        otrosbtn(self)
         abrirCerrarMenu(animated: true)
     }
     
@@ -93,6 +100,11 @@ class ViewController: UIViewController {
     @IBAction func escolaridadbtn(_ sender: Any) {
         tipodedatos = "escolaridad"
         title = "Escolaridad"
+        DatosProgramadorTable.reloadData()
+    }
+    @IBAction func otrosbtn(_ sender: Any) {
+        tipodedatos = "otros"
+        title = "Otros"
         DatosProgramadorTable.reloadData()
     }
     func recibirdatos() {

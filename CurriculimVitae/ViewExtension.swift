@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Kingfisher
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -64,6 +65,23 @@ extension ViewController: UITableViewDataSource {
                 else {
                     cell?.LicenciaturaEstado.text = "Trunco o en curso"
                 }
+                return cell!
+            case "otros":
+                let cell = DatosProgramadorTable.dequeueReusableCell(withIdentifier: "otroscell", for: indexPath) as? OtrosCell
+                cell?.Hobbiestitulo.text = "Hobbies"
+                cell?.Deporte.text  = programadorDatos.Developer?.Otros?.Deportes
+                cell?.Hobbie1.text = programadorDatos.Developer?.Otros?.Hobbie1
+                cell?.Hobbie2.text = programadorDatos.Developer?.Otros?.Hobbie2
+                cell?.Hobbie3.text = programadorDatos.Developer?.Otros?.Hobbies3
+                cell?.MetasEinteresestitle.text = "Metas e Intereses:"
+                cell?.interes1.text = programadorDatos.Developer?.Otros?.Interes1
+                cell?.interes2.text = programadorDatos.Developer?.Otros?.Interes2
+                cell?.meta1.text = programadorDatos.Developer?.Otros?.Meta1
+                let hobbiesimgurl = (programadorDatos.Developer?.Otros?.HobbiesImage)!
+                let metasulrimgurl = (programadorDatos.Developer?.Otros?.MetasInteresesImage)!
+                cell?.HobbiesImage.kf.setImage(with: URL(string: hobbiesimgurl))
+                cell?.InteresesImage.kf.setImage(with: URL(string: metasulrimgurl))
+                
                 return cell!
             default:
                 let cell = UITableViewCell(style: .default, reuseIdentifier: "cell")

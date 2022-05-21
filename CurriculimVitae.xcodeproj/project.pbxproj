@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C72FA56F2838A3BB00EC81B7 /* OtrosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72FA56D2838A3BB00EC81B7 /* OtrosCell.swift */; };
+		C72FA5702838A3BB00EC81B7 /* OtrosCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C72FA56E2838A3BB00EC81B7 /* OtrosCell.xib */; };
 		C744245F283750E500482CFF /* AcercaDeMiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C744245D283750E500482CFF /* AcercaDeMiCell.swift */; };
 		C7442460283750E500482CFF /* AcercaDeMiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C744245E283750E500482CFF /* AcercaDeMiCell.xib */; };
 		C7442463283760D600482CFF /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C7442462283760D600482CFF /* Kingfisher */; };
@@ -31,6 +33,8 @@
 /* Begin PBXFileReference section */
 		7B600E952DC1A6D99D177C1B /* Pods-CurriculimVitae.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurriculimVitae.release.xcconfig"; path = "Target Support Files/Pods-CurriculimVitae/Pods-CurriculimVitae.release.xcconfig"; sourceTree = "<group>"; };
 		AE15BA119B556E2256DB1658 /* Pods-CurriculimVitae.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurriculimVitae.debug.xcconfig"; path = "Target Support Files/Pods-CurriculimVitae/Pods-CurriculimVitae.debug.xcconfig"; sourceTree = "<group>"; };
+		C72FA56D2838A3BB00EC81B7 /* OtrosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtrosCell.swift; sourceTree = "<group>"; };
+		C72FA56E2838A3BB00EC81B7 /* OtrosCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtrosCell.xib; sourceTree = "<group>"; };
 		C744245D283750E500482CFF /* AcercaDeMiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcercaDeMiCell.swift; sourceTree = "<group>"; };
 		C744245E283750E500482CFF /* AcercaDeMiCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AcercaDeMiCell.xib; sourceTree = "<group>"; };
 		C7442464283764E100482CFF /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
@@ -85,6 +89,8 @@
 				C7E1295C28388AE400958101 /* ExperienciaLaboralCell.xib */,
 				C7E1295F28389B8F00958101 /* EscolaridadCell.swift */,
 				C7E1296028389B8F00958101 /* EscolaridadCell.xib */,
+				C72FA56D2838A3BB00EC81B7 /* OtrosCell.swift */,
+				C72FA56E2838A3BB00EC81B7 /* OtrosCell.xib */,
 			);
 			path = TableCells;
 			sourceTree = "<group>";
@@ -190,6 +196,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C72FA5702838A3BB00EC81B7 /* OtrosCell.xib in Resources */,
 				C79B614F2835FB97005874D4 /* LaunchScreen.storyboard in Resources */,
 				C79B61572835FD8B005874D4 /* GoogleService-Info.plist in Resources */,
 				C74424692837678200482CFF /* ConocimientosCell.xib in Resources */,
@@ -233,6 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C72FA56F2838A3BB00EC81B7 /* OtrosCell.swift in Sources */,
 				C79B615928360EA0005874D4 /* Structs.swift in Sources */,
 				C7E1296128389B8F00958101 /* EscolaridadCell.swift in Sources */,
 				C77937BA28372D4000DCAFE4 /* RequestData.swift in Sources */,

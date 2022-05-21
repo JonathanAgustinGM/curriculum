@@ -76,6 +76,9 @@
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" red="0.92654908439999994" green="0.71010929710000004" blue="0.65415794630000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="DatosOtros:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xyB-wi-yVe"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -143,6 +146,9 @@
                                                 <color key="tintColor" red="0.92654908439999994" green="0.55666067760000004" blue="0.46525859650000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="sportscourt.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="otrosbtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MV5-jX-Yho"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>

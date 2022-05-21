@@ -64,8 +64,11 @@ struct Otros: Decodable {
     var Deportes: String?
     var Hobbie1: String?
     var Hobbie2: String?
-    var Hobbie3: String?
+    var Hobbies3: String?
     var Interes1: String?
-    var Interes2: String
+    var Interes2: String?
+    var Meta1: String?
+    var HobbiesImage: String?
+    var MetasInteresesImage: String?
 
 }
