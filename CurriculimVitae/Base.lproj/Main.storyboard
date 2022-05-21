@@ -52,6 +52,9 @@
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" red="0.92654908439999994" green="0.71010929710000004" blue="0.65415794630000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="DatosExperieciaLaboral:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FY6-ax-pUE"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TIK-z1-XA7">
                                         <rect key="frame" x="0.0" y="182" width="195" height="57.5"/>
@@ -114,17 +117,20 @@
                                                     <action selector="conocimientosbtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YYv-JC-02Q"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUQ-gQ-u0M">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q62-Rr-sAs">
                                                 <rect key="frame" x="145.5" y="0.0" width="63" height="50"/>
                                                 <color key="tintColor" red="0.92654908439999994" green="0.55666067760000004" blue="0.46525859650000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="building.columns.fill" catalog="system"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="eyeglasses" catalog="system"/>
+                                                <connections>
+                                                    <action selector="experiencialaboralbtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hPe-qV-tn7"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q62-Rr-sAs">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUQ-gQ-u0M">
                                                 <rect key="frame" x="218.5" y="0.0" width="62.5" height="50"/>
                                                 <color key="tintColor" red="0.92654908439999994" green="0.55666067760000004" blue="0.46525859650000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="eyeglasses" catalog="system"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="building.columns.fill" catalog="system"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLi-Vj-tbi">
                                                 <rect key="frame" x="291" y="0.0" width="63" height="50"/>

@@ -34,6 +34,13 @@ extension ViewController: UITableViewDataSource {
                 cell?.dato4.text = conocimientosdato?.xCode3
                 cell?.dato5.text = conocimientosdato?.xCode4
                 return cell!
+            case "experiencialaboral":
+                let cell = DatosProgramadorTable.dequeueReusableCell(withIdentifier: "experiencialaboralcell", for: indexPath) as? ExperienciaLaboralCell
+                let experienciadato = programadorDatos.Developer?.ExperienciaLaboral
+                cell?.NombreEmpresa.text = experienciadato?.Empresa1?.Nombre
+                let texto = experienciadato?.Empresa1?.Funciones?.replacingOccurrences(of: "\\n", with: "\n")
+                cell?.Funciones.text = texto;               cell?.TiempoLaborado.text = experienciadato?.Empresa1?.TiempoTrabajado
+                return cell!
             default:
                 let cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
                 return cell

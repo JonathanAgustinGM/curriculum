@@ -24,12 +24,56 @@ class ViewController: UIViewController {
         DatosProgramadorTable.dataSource = self
         DatosProgramadorTable.register(UINib(nibName: "AcercaDeMiCell", bundle: nil), forCellReuseIdentifier: "acercademicell")
         DatosProgramadorTable.register(UINib(nibName: "ConocimientosCell", bundle: nil), forCellReuseIdentifier: "conocimientoscell")
+        DatosProgramadorTable.register(UINib(nibName: "ExperienciaLaboralCell", bundle: nil), forCellReuseIdentifier: "experiencialaboralcell")
     }
 
     @IBAction func menubtn(_ sender: Any) {
         abrirCerrarMenu(animated: true)
+    }
 
-       
+    @IBAction func DatosAcercademi(_ sender: Any) {
+        acercademibtn(self)
+        abrirCerrarMenu(animated: true)
+    }
+
+    @IBAction func DatosConocimientos(_ sender: Any) {
+        conocimientosbtn(self)
+        abrirCerrarMenu(animated: true)
+    }
+
+    @IBAction func DatosExperieciaLaboral(_ sender: Any) {
+        experiencialaboralbtn(self)
+        abrirCerrarMenu(animated: true)
+    }
+
+    func abrirCerrarMenu(animated: Bool) {
+        if DerechaConstraint.constant == 0 {
+            DerechaConstraint.constant = 240
+            IzquierdaConstraint.constant = -240
+            MenuBtn.title = "Cerrar"
+        } else {
+            DerechaConstraint.constant = 0
+            IzquierdaConstraint.constant = 0
+            MenuBtn.title = "Menú"
+        }
+    }
+
+    @IBAction func acercademibtn(_ sender: Any) {
+        tipodedatos = "acercademi"
+        title = "Acerca de Mi"
+        DatosProgramadorTable.reloadData()
+    }
+
+    @IBAction func conocimientosbtn(_ sender: Any) {
+        tipodedatos = "conocimientos"
+        title = "Conocimientos"
+        DatosProgramadorTable.reloadData()
+    }
+
+    @IBAction func experiencialaboralbtn(_ sender: Any) {
+        tipodedatos = "experiencialaboral"
+        title = "Experiencia Laboral"
+        DatosProgramadorTable.reloadData()
     }
 
     func recibirdatos() {
@@ -43,34 +87,4 @@ class ViewController: UIViewController {
             }
         }
     }
-    @IBAction func DatosAcercademi(_ sender: Any) {
-   acercademibtn(self)
-        self.abrirCerrarMenu(animated: true)
-    }
-    @IBAction func DatosConocimientos(_ sender: Any) {
-        conocimientosbtn(self)
-        self.abrirCerrarMenu(animated: true)
-    }
-    func abrirCerrarMenu(animated: Bool) {
-        if DerechaConstraint.constant == 0 {
-            DerechaConstraint.constant = 240
-            IzquierdaConstraint.constant = -240
-            MenuBtn.title = "Cerrar"
-        } else {
-            DerechaConstraint.constant = 0
-            IzquierdaConstraint.constant = 0
-            MenuBtn.title = "Menú"
-        }
-    }
-    @IBAction func acercademibtn(_ sender: Any) {
-        tipodedatos = "acercademi"
-        self.title = "Acerca de Mi"
-        self.DatosProgramadorTable.reloadData()
-    }
-    @IBAction func conocimientosbtn(_ sender: Any) {
-        tipodedatos = "conocimientos"
-        self.title = "Conocimientos"
-        self.DatosProgramadorTable.reloadData()
-    }
 }
-

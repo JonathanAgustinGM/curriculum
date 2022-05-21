@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreText
  
 struct Programador: Decodable {
     var Developer: Developer?
@@ -18,6 +19,7 @@ struct Developer: Decodable {
     var Escolaridad: Escolaridad?
     var ExperienciaLaboral: ExperienciaLaboral?
     var Foto: String?
+    var Otros: Otros?
 }
 struct Conocimientos: Decodable {
     var LenguajesProgramacion: LenguajesProgramacion?
@@ -57,4 +59,13 @@ struct Empresa1: Decodable {
     var Nombre: String?
     var TiempoTrabajado: String?
     
+}
+struct Otros: Decodable {
+    var Deportes: String?
+    var Hobbie1: String?
+    var Hobbie2: String?
+    var Hobbie3: String?
+    var Interes1: String?
+    var Interes2: String
+
 }

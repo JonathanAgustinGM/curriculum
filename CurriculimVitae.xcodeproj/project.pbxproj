@@ -22,6 +22,8 @@
 		C79B614F2835FB97005874D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C79B614D2835FB97005874D4 /* LaunchScreen.storyboard */; };
 		C79B61572835FD8B005874D4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C79B61562835FD8B005874D4 /* GoogleService-Info.plist */; };
 		C79B615928360EA0005874D4 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79B615828360EA0005874D4 /* Structs.swift */; };
+		C7E1295D28388AE400958101 /* ExperienciaLaboralCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E1295B28388AE400958101 /* ExperienciaLaboralCell.swift */; };
+		C7E1295E28388AE400958101 /* ExperienciaLaboralCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7E1295C28388AE400958101 /* ExperienciaLaboralCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		C79B61502835FB97005874D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C79B61562835FD8B005874D4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C79B615828360EA0005874D4 /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
+		C7E1295B28388AE400958101 /* ExperienciaLaboralCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienciaLaboralCell.swift; sourceTree = "<group>"; };
+		C7E1295C28388AE400958101 /* ExperienciaLaboralCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExperienciaLaboralCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 				C744245E283750E500482CFF /* AcercaDeMiCell.xib */,
 				C74424662837678200482CFF /* ConocimientosCell.swift */,
 				C74424672837678200482CFF /* ConocimientosCell.xib */,
+				C7E1295B28388AE400958101 /* ExperienciaLaboralCell.swift */,
+				C7E1295C28388AE400958101 /* ExperienciaLaboralCell.xib */,
 			);
 			path = TableCells;
 			sourceTree = "<group>";
@@ -181,6 +187,7 @@
 				C79B614F2835FB97005874D4 /* LaunchScreen.storyboard in Resources */,
 				C79B61572835FD8B005874D4 /* GoogleService-Info.plist in Resources */,
 				C74424692837678200482CFF /* ConocimientosCell.xib in Resources */,
+				C7E1295E28388AE400958101 /* ExperienciaLaboralCell.xib in Resources */,
 				C7442460283750E500482CFF /* AcercaDeMiCell.xib in Resources */,
 				C79B614C2835FB97005874D4 /* Assets.xcassets in Resources */,
 				C79B614A2835FB95005874D4 /* Main.storyboard in Resources */,
@@ -222,6 +229,7 @@
 				C79B615928360EA0005874D4 /* Structs.swift in Sources */,
 				C77937BA28372D4000DCAFE4 /* RequestData.swift in Sources */,
 				C79B61472835FB95005874D4 /* ViewController.swift in Sources */,
+				C7E1295D28388AE400958101 /* ExperienciaLaboralCell.swift in Sources */,
 				C7442465283764E100482CFF /* ViewExtension.swift in Sources */,
 				C74424682837678200482CFF /* ConocimientosCell.swift in Sources */,
 				C79B61432835FB95005874D4 /* AppDelegate.swift in Sources */,
