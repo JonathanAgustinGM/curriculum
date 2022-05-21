@@ -22,9 +22,19 @@ class ViewController: UIViewController {
         recibirdatos()
 
         DatosProgramadorTable.dataSource = self
-        DatosProgramadorTable.register(UINib(nibName: "AcercaDeMiCell", bundle: nil), forCellReuseIdentifier: "acercademicell")
-        DatosProgramadorTable.register(UINib(nibName: "ConocimientosCell", bundle: nil), forCellReuseIdentifier: "conocimientoscell")
-        DatosProgramadorTable.register(UINib(nibName: "ExperienciaLaboralCell", bundle: nil), forCellReuseIdentifier: "experiencialaboralcell")
+        
+        DatosProgramadorTable.register(UINib(nibName: "AcercaDeMiCell",
+                                             bundle: nil),
+                                       forCellReuseIdentifier: "acercademicell")
+        DatosProgramadorTable.register(UINib(nibName: "ConocimientosCell",
+                                             bundle: nil),
+                                       forCellReuseIdentifier: "conocimientoscell")
+        DatosProgramadorTable.register(UINib(nibName: "ExperienciaLaboralCell",
+                                             bundle: nil),
+                                       forCellReuseIdentifier: "experiencialaboralcell")
+        DatosProgramadorTable.register(UINib(nibName: "EscolaridadCell",
+                                            bundle: nil),
+                                      forCellReuseIdentifier: "escolaridadcell")
     }
 
     @IBAction func menubtn(_ sender: Any) {
@@ -45,7 +55,11 @@ class ViewController: UIViewController {
         experiencialaboralbtn(self)
         abrirCerrarMenu(animated: true)
     }
-
+    @IBAction func DatosEscolaridad(_ sender: Any) {
+        escolaridadbtn(self)
+        abrirCerrarMenu(animated: true)
+    }
+    
     func abrirCerrarMenu(animated: Bool) {
         if DerechaConstraint.constant == 0 {
             DerechaConstraint.constant = 240
@@ -76,6 +90,11 @@ class ViewController: UIViewController {
         DatosProgramadorTable.reloadData()
     }
 
+    @IBAction func escolaridadbtn(_ sender: Any) {
+        tipodedatos = "escolaridad"
+        title = "Escolaridad"
+        DatosProgramadorTable.reloadData()
+    }
     func recibirdatos() {
         ExternalData.shared.GetDeveloperData { dev in
             self.programadorDatos = dev

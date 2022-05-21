@@ -24,6 +24,8 @@
 		C79B615928360EA0005874D4 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79B615828360EA0005874D4 /* Structs.swift */; };
 		C7E1295D28388AE400958101 /* ExperienciaLaboralCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E1295B28388AE400958101 /* ExperienciaLaboralCell.swift */; };
 		C7E1295E28388AE400958101 /* ExperienciaLaboralCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7E1295C28388AE400958101 /* ExperienciaLaboralCell.xib */; };
+		C7E1296128389B8F00958101 /* EscolaridadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E1295F28389B8F00958101 /* EscolaridadCell.swift */; };
+		C7E1296228389B8F00958101 /* EscolaridadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7E1296028389B8F00958101 /* EscolaridadCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		C79B615828360EA0005874D4 /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
 		C7E1295B28388AE400958101 /* ExperienciaLaboralCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienciaLaboralCell.swift; sourceTree = "<group>"; };
 		C7E1295C28388AE400958101 /* ExperienciaLaboralCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExperienciaLaboralCell.xib; sourceTree = "<group>"; };
+		C7E1295F28389B8F00958101 /* EscolaridadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscolaridadCell.swift; sourceTree = "<group>"; };
+		C7E1296028389B8F00958101 /* EscolaridadCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EscolaridadCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 				C74424672837678200482CFF /* ConocimientosCell.xib */,
 				C7E1295B28388AE400958101 /* ExperienciaLaboralCell.swift */,
 				C7E1295C28388AE400958101 /* ExperienciaLaboralCell.xib */,
+				C7E1295F28389B8F00958101 /* EscolaridadCell.swift */,
+				C7E1296028389B8F00958101 /* EscolaridadCell.xib */,
 			);
 			path = TableCells;
 			sourceTree = "<group>";
@@ -191,6 +197,7 @@
 				C7442460283750E500482CFF /* AcercaDeMiCell.xib in Resources */,
 				C79B614C2835FB97005874D4 /* Assets.xcassets in Resources */,
 				C79B614A2835FB95005874D4 /* Main.storyboard in Resources */,
+				C7E1296228389B8F00958101 /* EscolaridadCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C79B615928360EA0005874D4 /* Structs.swift in Sources */,
+				C7E1296128389B8F00958101 /* EscolaridadCell.swift in Sources */,
 				C77937BA28372D4000DCAFE4 /* RequestData.swift in Sources */,
 				C79B61472835FB95005874D4 /* ViewController.swift in Sources */,
 				C7E1295D28388AE400958101 /* ExperienciaLaboralCell.swift in Sources */,

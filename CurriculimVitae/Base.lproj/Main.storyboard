@@ -59,11 +59,14 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TIK-z1-XA7">
                                         <rect key="frame" x="0.0" y="182" width="195" height="57.5"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Estudios">
+                                        <buttonConfiguration key="configuration" style="filled" title="Escolaridad">
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="13"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" red="0.92654908439999994" green="0.71010929710000004" blue="0.65415794630000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="DatosEscolaridad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mdt-gt-xYw"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmI-ip-hAA">
                                         <rect key="frame" x="0.0" y="242.5" width="195" height="57.5"/>
@@ -131,6 +134,9 @@
                                                 <color key="tintColor" red="0.92654908439999994" green="0.55666067760000004" blue="0.46525859650000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="building.columns.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="escolaridadbtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XPr-KU-gfG"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLi-Vj-tbi">
                                                 <rect key="frame" x="291" y="0.0" width="63" height="50"/>

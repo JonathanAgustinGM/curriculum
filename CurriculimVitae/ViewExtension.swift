@@ -41,6 +41,30 @@ extension ViewController: UITableViewDataSource {
                 let texto = experienciadato?.Empresa1?.Funciones?.replacingOccurrences(of: "\\n", with: "\n")
                 cell?.Funciones.text = texto;               cell?.TiempoLaborado.text = experienciadato?.Empresa1?.TiempoTrabajado
                 return cell!
+            
+            case "escolaridad":
+                let cell = DatosProgramadorTable.dequeueReusableCell(withIdentifier: "escolaridadcell", for: indexPath) as? EscolaridadCell
+                let escolaridadDato = programadorDatos.Developer?.Escolaridad
+                cell?.BachilleratoTitle.text = "Bachillerato"
+                cell?.BachilleratoInstitucion.text = escolaridadDato?.Bachillerato?.Institucion
+                cell?.BachilleratoFechaInicio.text = escolaridadDato?.Bachillerato?.FechaInicio
+                cell?.BachilleratoFechaFinal.text = escolaridadDato?.Bachillerato?.FechaFinal
+                if escolaridadDato?.Bachillerato?.Finalizada == true {
+                    cell?.BachilleratoEstado.text = "Finalizado"}
+                else {
+                    cell?.BachilleratoEstado.text = "Trunco o en curso"
+                }
+                cell?.LicenciaturaTitle.text = "Licenciatura"
+                cell?.LicenciaturaInstitucion.text = escolaridadDato?.Licenciatura?.Institucion
+                cell?.LicenciaturaCarrera.text = escolaridadDato?.Licenciatura?.Carrera
+                cell?.LicenciaturaFechaInicio.text = escolaridadDato?.Licenciatura?.FechaInicio
+                cell?.LicenciaturaFechaFinal.text = escolaridadDato?.Licenciatura?.FechaFinal
+                if escolaridadDato?.Licenciatura?.Finalizada == true {
+                    cell?.LicenciaturaEstado.text = "Finalizado"}
+                else {
+                    cell?.LicenciaturaEstado.text = "Trunco o en curso"
+                }
+                return cell!
             default:
                 let cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
                 return cell
